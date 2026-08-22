@@ -738,3 +738,120 @@ footer {
     }
 
 }
+/* ========================================
+   MOBILE RESPONSIVE SIZE
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* الشريط العلوي */
+
+    .top-bar {
+        height: 34px;
+        padding: 0 8px;
+    }
+
+    .moving-chef {
+        height: 28px;
+        width: auto;
+    }
+
+    .top-title {
+        font-size: 12px;
+    }
+
+
+    /* اللوجو والعبارة */
+
+    .hero {
+        padding: 14px 10px 8px;
+    }
+
+    .main-logo {
+        width: 115px;
+        max-width: 35vw;
+    }
+
+
+    /* الفروع */
+
+    .branches {
+        padding: 8px 12px;
+    }
+
+    .branches-container {
+        width: 100%;
+        max-width: 340px;
+        margin: auto;
+        gap: 8px;
+    }
+
+    .branch {
+        padding: 8px 10px;
+        border-radius: 8px;
+    }
+
+    .branch h3 {
+        font-size: 14px;
+        margin: 2px 0 4px;
+    }
+
+    .branch p {
+        font-size: 11px;
+        line-height: 1.4;
+        margin: 2px 0;
+    }
+
+    .branch-phone {
+        font-size: 11px;
+        margin-top: 4px;
+    }
+
+
+    /* أزرار المنيو والعروض واللوكيشن */
+
+    .main-buttons {
+        width: 100%;
+        max-width: 340px;
+        margin: 10px auto;
+        gap: 7px;
+    }
+
+    .main-button {
+        min-height: 40px;
+        padding: 7px 10px;
+        font-size: 13px;
+        border-radius: 7px;
+    }
+
+    .main-button i {
+        font-size: 14px;
+    }
+
+
+    /* أزرار التواصل أسفل الصفحة */
+
+    .contact-buttons {
+        width: 100%;
+        max-width: 340px;
+        margin: 12px auto 15px;
+        gap: 6px;
+    }
+
+    .contact-button {
+        min-height: 36px;
+        padding: 6px 8px;
+        font-size: 12px;
+        border-radius: 7px;
+    }
+
+    .contact-button i {
+        font-size: 13px;
+    }
+
+}
