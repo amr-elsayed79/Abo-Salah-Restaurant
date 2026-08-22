@@ -1,0 +1,740 @@
+/* ========================================
+   Abo Salah Pizza
+   Black & Gold Theme
+======================================== */
+
+:root {
+    --black: #000000;
+    --dark: #0b0b0b;
+    --card: #111111;
+    --gold: #ffb000;
+    --gold-light: #ffc233;
+    --white: #ffffff;
+}
+
+
+/* ========================================
+   General
+======================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+    font-family: Arial, Tahoma, sans-serif;
+    direction: rtl;
+    text-align: center;
+    min-height: 100vh;
+}
+
+
+/* ========================================
+   Top Moving Chef Bar
+======================================== */
+
+.top-bar {
+    width: 100%;
+    height: 65px;
+    background: var(--gold);
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 2px solid var(--gold-light);
+}
+
+.moving-chef {
+    position: absolute;
+
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+
+    animation: moveChef 12s linear infinite;
+}
+
+@keyframes moveChef {
+
+    0% {
+        right: -70px;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+
+/* ========================================
+   Hero / Logo
+======================================== */
+
+.hero {
+    padding: 30px 20px 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    max-width: 50%;
+    height: auto;
+
+    display: block;
+
+    margin: 0 auto 15px;
+
+    object-fit: contain;
+}
+
+.hero h1 {
+    color: var(--gold);
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+
+/* ========================================
+   Branches
+======================================== */
+
+.branches {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 10px auto 25px;
+}
+
+.branches h2 {
+    color: var(--gold);
+
+    font-size: 24px;
+
+    margin-bottom: 20px;
+}
+
+
+/* الفروع */
+
+.branch-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+/* كارت الفرع */
+
+.branch {
+    background: linear-gradient(
+        145deg,
+        #111111,
+        #050505
+    );
+
+    border: 1px solid #292929;
+
+    border-right: 4px solid var(--gold);
+
+    border-radius: 15px;
+
+    padding: 20px 15px;
+
+    transition: 0.3s ease;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.branch:hover {
+    transform: translateY(-3px);
+
+    border-color: var(--gold);
+
+    box-shadow:
+        0 0 15px rgba(255, 176, 0, 0.18);
+}
+
+
+/* اسم الفرع */
+
+.branch h3 {
+    color: var(--white);
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+
+/* العنوان */
+
+.branch p {
+    color: #eeeeee;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* رقم الهاتف */
+
+.branch .phone {
+    display: inline-block;
+
+    margin-top: 8px;
+
+    color: var(--gold);
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.branch .phone:hover {
+    color: var(--gold-light);
+}
+
+
+/* ========================================
+   Main Buttons
+======================================== */
+
+.main-buttons {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 20px auto;
+}
+
+.main-button {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    width: 100%;
+
+    min-height: 60px;
+
+    margin: 15px 0;
+
+    background: transparent;
+
+    color: var(--gold);
+
+    border: 2px solid var(--gold);
+
+    border-radius: 30px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.main-button:hover {
+    background: var(--gold);
+
+    color: var(--black);
+
+    transform: scale(1.02);
+
+    box-shadow:
+        0 0 18px rgba(255, 176, 0, 0.25);
+}
+
+
+/* ========================================
+   Menu Button
+======================================== */
+
+.menu-button {
+    color: var(--gold);
+
+    border-color: var(--gold);
+}
+
+.menu-button:hover {
+    background: var(--gold);
+
+    color: var(--black);
+}
+
+
+/* ========================================
+   Offers Button
+======================================== */
+
+.offer-button {
+    color: var(--gold);
+
+    border-color: var(--gold);
+}
+
+.offer-button:hover {
+    background: var(--gold);
+
+    color: var(--black);
+}
+
+
+/* ========================================
+   Location Button
+======================================== */
+
+.location-button {
+    color: var(--gold);
+
+    border-color: var(--gold);
+}
+
+.location-button:hover {
+    background: var(--gold);
+
+    color: var(--black);
+}
+
+
+/* ========================================
+   Icons
+======================================== */
+
+.main-button i,
+.main-button span {
+    color: inherit;
+}
+
+
+/* ========================================
+   Contact Buttons
+======================================== */
+
+.contact {
+    margin: 35px auto 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 22px;
+}
+
+.contact-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 22px;
+}
+
+.contact-button {
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 2px solid var(--gold);
+
+    border-radius: 50%;
+
+    color: var(--gold);
+
+    background: transparent;
+
+    font-size: 23px;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.contact-button:hover {
+    background: var(--gold);
+
+    color: var(--black);
+
+    transform: translateY(-3px);
+}
+
+
+/* ========================================
+   Menu / Offers Images
+======================================== */
+
+.image-section {
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 35px auto;
+}
+
+.image-section h2 {
+    color: var(--gold);
+
+    font-size: 23px;
+
+    margin-bottom: 18px;
+}
+
+.images-container {
+    width: 100%;
+}
+
+.menu-image,
+.offer-image {
+    width: 100%;
+
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    margin: 0 auto;
+
+    border: 1px solid var(--gold);
+
+    border-radius: 12px;
+}
+
+
+/* ========================================
+   Footer
+======================================== */
+
+footer {
+    margin-top: 40px;
+
+    padding: 20px;
+
+    border-top: 1px solid var(--gold);
+
+    color: var(--gold);
+
+    font-size: 14px;
+}
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 700px) {
+
+    .top-bar {
+        height: 55px;
+    }
+
+    .moving-chef {
+        width: 48px;
+        height: 48px;
+    }
+
+    .hero {
+        padding-top: 25px;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    .hero h1 {
+        font-size: 21px;
+    }
+
+    .branches {
+        width: 92%;
+    }
+
+    .branch-container {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .branch {
+        padding: 15px 12px;
+    }
+
+    .branch h3 {
+        font-size: 18px;
+    }
+
+    .branch p {
+        font-size: 14px;
+    }
+
+    .branch .phone {
+        font-size: 17px;
+    }
+
+    .main-buttons {
+        width: 92%;
+    }
+
+    .main-button {
+        min-height: 54px;
+
+        font-size: 18px;
+
+        margin: 12px 0;
+    }
+
+    .contact-button {
+        width: 45px;
+
+        height: 45px;
+
+        font-size: 20px;
+    }
+
+    .contact-buttons {
+        gap: 16px;
+    }
+}
+
+
+/* ========================================
+   Small Phones
+======================================== */
+
+@media (max-width: 400px) {
+
+    .logo {
+        width: 100px;
+    }
+
+    .hero h1 {
+        font-size: 19px;
+    }
+
+    .main-button {
+        font-size: 17px;
+
+        min-height: 50px;
+    }
+
+    .branch h3 {
+        font-size: 17px;
+    }
+
+    .branch p {
+        font-size: 13px;
+    }
+}
+/* ========================================
+   Gallery Viewer
+======================================== */
+
+.image-viewer {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.96);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 9999;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.25s ease;
+}
+
+.image-viewer.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* الصورة */
+
+.viewer-image {
+    max-width: 82%;
+    max-height: 82vh;
+
+    object-fit: contain;
+
+    border: 2px solid var(--gold);
+    border-radius: 10px;
+
+    box-shadow: 0 0 25px rgba(255, 176, 0, 0.2);
+}
+
+
+/* زر الإغلاق */
+
+.close-viewer {
+    position: absolute;
+
+    top: 18px;
+    right: 22px;
+
+    width: 45px;
+    height: 45px;
+
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+
+    background: var(--black);
+    color: var(--gold);
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    z-index: 10;
+}
+
+.close-viewer:hover {
+    background: var(--gold);
+    color: var(--black);
+}
+
+
+/* أزرار التنقل */
+
+.prev-image,
+.next-image {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 45px;
+    height: 45px;
+
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+
+    background: var(--black);
+    color: var(--gold);
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    z-index: 10;
+}
+
+.prev-image {
+    left: 25px;
+}
+
+.next-image {
+    right: 25px;
+}
+
+.prev-image:hover,
+.next-image:hover {
+    background: var(--gold);
+    color: var(--black);
+}
+
+
+/* عداد الصور */
+
+.image-counter {
+    position: absolute;
+
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: var(--gold);
+
+    background: var(--black);
+
+    border: 1px solid var(--gold);
+
+    border-radius: 20px;
+
+    padding: 6px 15px;
+
+    font-size: 14px;
+
+    direction: ltr;
+}
+
+
+/* الموبايل */
+
+@media (max-width: 600px) {
+
+    .viewer-image {
+        max-width: 88%;
+        max-height: 78vh;
+    }
+
+    .close-viewer {
+        top: 12px;
+        right: 12px;
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 26px;
+    }
+
+    .prev-image,
+    .next-image {
+        width: 38px;
+        height: 38px;
+
+        font-size: 17px;
+    }
+
+    .prev-image {
+        left: 8px;
+    }
+
+    .next-image {
+        right: 8px;
+    }
+
+}

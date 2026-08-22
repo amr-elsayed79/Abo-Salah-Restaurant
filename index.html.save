@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>بيتزا أبو صلاح</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         TOP BAR
+    ========================== -->
+
+    <header class="top-bar">
+
+        <!-- الشيف المتحرك -->
+        <img src="images/chef.png"
+             class="moving-chef"
+             alt="Abo Salah Chef">
+
+        <!-- اسم المطعم -->
+        <div class="top-title">
+            Abo Salah Pizza
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+        <!-- اللوجو والجملة -->
+
+        <section class="hero">
+
+            <img src="images/logo.jpg"
+                 class="main-logo"
+                 alt="بيتزا أبو صلاح">
+
+            <h1>
+                طعم أصيل… وجودة تستحق التجربة ❤️
+            </h1>
+
+        </section>
+
+
+        <!-- =========================
+             BRANCHES
+        ========================== -->
+
+        <section class="branches" id="branches">
+
+            <h2>
+                📍 فروعنا
+            </h2>
+
+            <div class="branches-container">
+
+                <!-- الفرع الأول -->
+
+                <div class="branch">
+
+                    <h3>
+                        الفرع الأول
+                    </h3>
+
+                    <p>
+                        مشتول السوق
+                    </p>
+
+                    <p>
+                        أمام المدرسة التجارية
+                    </p>
+
+                    <a href="tel:01030666675"
+                       class="branch-phone">
+
+                        <i class="fa-solid fa-phone"></i>
+                        01030666675
+
+                    </a>
+
+                </div>
+
+
+                <!-- الفرع الثاني -->
+
+                <div class="branch">
+
+                    <h3>
+                        الفرع الثاني
+                    </h3>
+
+                    <p>
+                        مشتول السوق
+                    </p>
+
+                    <p>
+                        عربد — أمام الساحة
+                    </p>
+
+                    <a href="tel:01010712027"
+                       class="branch-phone">
+                        <i class="fa-solid fa-phone"></i>
+                        01010712027
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MAIN BUTTONS
+        ========================== -->
+
+        <section class="main-buttons">
+
+            <!-- MENU -->
+
+            <a href="#menu"
+               class="main-button">
+
+                <i class="fa-solid fa-pizza-slice"></i>
+
+                <span>
+                    المنيو
+                </span>
+
+            </a>
+
+
+            <!-- OFFERS -->
+
+            <a href="#offers"
+               class="main-button offers-button">
+
+                <i class="fa-solid fa-fire"></i>
+
+                <span>
+                    العروض
+                </span>
+
+            </a>
+
+
+            <!-- LOCATION -->
+
+            <a href="#branches"
+               class="main-button">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span>
+                    اللوكيشن
+                </span>
+
+            </a>
+
+        </section>
+
+
+      
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER CONTACT
+    ========================== -->
+
+    <footer>
+
+        <div class="contact-buttons">
+
+            <!-- Facebook -->
+
+            <a href="https://www.facebook.com/share/14mTPoZtiMK/"
+               target="_blank"
+               class="contact-button facebook"
+               aria-label="Facebook">
+
+                <i class="fa-brands fa-facebook-f"></i>
+
+            </a>
+
+
+            <!-- Phone -->
+
+            <a href="tel:01030666675"
+               class="contact-button phone"
+               aria-label="Phone">
+
+                <i class="fa-solid fa-phone"></i>
+
+            </a>
+
+
+            <!-- WhatsApp -->
+
+            <a href="https://wa.me/201030666675"
+               target="_blank"
+               class="contact-button whatsapp"
+               aria-label="WhatsApp">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+            </a>
+
+        </div>
+
+        <p>
+            © بيتزا أبو صلاح
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
